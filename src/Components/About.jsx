@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button"
-import { ShoppingCart, Menu, User, Facebook, Twitter, Instagram } from "lucide-react"
+import { ShoppingCart, Menu, Facebook, Twitter, Instagram } from "lucide-react"
 import Link from "next/link"
 import {
   Sheet,

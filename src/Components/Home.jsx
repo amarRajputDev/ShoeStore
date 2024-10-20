@@ -7,10 +7,7 @@ import {
   Truck,
   RefreshCcw,
   Heart,
-  Menu,
-  X,
-  User,
-  ShoppingCart,
+
 } from "lucide-react";
 import Link from "next/link";
 import shoe from "../asset/sports-shoe4.jpg";
