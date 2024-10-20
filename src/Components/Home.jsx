@@ -37,6 +37,7 @@ export default function HomePage() {
         <div className="absolute z-10 inset-0 bg-black opacity-50"></div>
         <Image
           src={model}
+          alt = "main image"
           className=" absolute group-hover:scale-110 duration-500 delay-75 left-0 right-0"
         />
         <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">

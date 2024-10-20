@@ -24,7 +24,7 @@ export default function CartPage() {
     if (!isLoggedIn) {
       router.push("/login")
     }
-  }, [])
+  })
   
 
   const updateQuantity = (id, newQuantity) => {

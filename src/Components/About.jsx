@@ -7,6 +7,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from "next/image"
 
 export default function AboutPage() {
   const teamMembers = [
@@ -80,7 +81,7 @@ export default function AboutPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
           <h2 className="text-2xl font-semibold text-purple-700 mb-4">Our Story</h2>
           <p className="text-gray-700 mb-6">
-            Founded in 2010, ShoeStore has been at the forefront of footwear fashion, providing our customers with the latest trends and timeless classics. Our journey began with a simple idea: to offer high-quality, stylish shoes that don't break the bank.
+            Founded in 2010, ShoeStore has been at the forefront of footwear fashion, providing our customers with the latest trends and timeless classics. Our journey began with a simple idea: to offer high-quality, stylish shoes that dont break the bank.
           </p>
           <p className="text-gray-700 mb-6">
             Over the years, we've grown from a small local shop to a nationwide online retailer, but our commitment to quality, style, and customer satisfaction remains unchanged. We believe that everyone deserves to walk in comfort and confidence, and we're here to make that happen.
@@ -106,7 +107,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+                <Image src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
                 <h3 className="text-xl font-semibold text-purple-700">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
               </div>

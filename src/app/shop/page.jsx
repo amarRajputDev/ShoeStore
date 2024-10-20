@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import useUserStore from '@/store/Userstore'
 
-function page() {
+function Page() {
   const router = useRouter()
   const {isLoggedIn} = useUserStore()
   useEffect(() => {
@@ -12,7 +12,7 @@ function page() {
       // Redirect to login if the user is not logged in
       router.push('/login');
     }
-  }, [])
+  }, [isLoggedIn , router])
   
   return (
     <div>
@@ -21,4 +21,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
